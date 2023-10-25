@@ -1,0 +1,357 @@
+
+body {color: black;
+    background-color:white;
+    font-family: arial, helvetica, sans-serif; 
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      background-color: white;}
+      
+      #borderimg {
+      border-image-source: url('/media/examples/border-stars.png');
+    }
+    li {
+      display: inline;
+    }
+    a {
+      
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;height:0px;width:100px;
+      color: black;
+      text-align: center;
+      padding: 0px 0px;
+      text-decoration: solid;
+    }
+    
+    
+    li a:hover {
+      background-color: green;
+      padding: 10px 10px
+    }
+    
+    p {padding:1em; line-height:2em;}
+    
+    body section.writing {
+        background-color:white;
+        margin:auto;
+        padding:2em;
+    
+        display:flex;
+        flex-direction:row; 
+        /*justify-content:space-around;*/
+    }
+    
+    section.writing figure {
+        flex:1;
+        padding: 3vw;
+        background-color:Orange;
+    }
+    
+    section.writing div.analysis {
+          flex:1; 
+    
+        padding: 3vw;
+        background-color:Yellow
+        
+        
+    }
+    
+    
+    body section.gallery {
+      width: 80%;
+        background-color: green; 
+        padding:2em; 
+        margin:auto; 
+        display:flex;
+        flex-direction:row;
+        }
+    
+    
+    section.gallery figure {flex: 1; margin:auto; padding-top: 1vw; padding-bottom: 1vw; }
+    figcaption {font-style: italic; font-size: smaller;}
+    
+    img.photo {max-width:100px; width:20%}
+    
+    
+    ol {list-style-type: lower-alpha;
+    padding: 5em;
+        
+    }
+    
+    
+     
+     nav {background-color:aqua;
+     display:flex;
+     
+     }
+    
+     nav > img.photo {
+    max-width:200px;
+         flex:1;
+     }
+     
+     nav > ul.menuB {
+     list-style-type: none;
+    flex:9;
+      
+    }
+    
+    nav ul.menuB li {
+      display:inline;
+      font-size: 1.5vw; /*padding:2vw;*/
+      padding-left:1vw;
+      padding-right:1vw;
+      padding-top:5vw;
+      padding-bottom:10vw;
+    
+    
+    }
+    
+    nav#menu {padding:2vw; }
+     
+    .button { border:2px; border-style:solid; border-color:blue; padding:2vw; background-color:#E6E6FA; color:yellow; width:10%; display:inline;
+     border-radius: 20px;
+     }
+     
+    span.States.on {color:#3333CC}
+    span.Characters.on {color: #ff0000
+    }
+    span.Objects.on {color:#477519}
+    
+    body {
+      background: #fff;
+    }
+    
+    svg {
+      max-height: 50vh;
+      max-width: 50%;
+    }
+    
+    .sun__bg {
+        animation: wave 4s ease-in-out infinite;
+        transform-origin: bottom;
+      }
+      
+      @keyframes wave {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px); /* Adjust the amplitude of the wave */
+        }
+      }
+    
+    .sun__top {
+      transform: rotateZ(180deg);
+      animation: rotateIn 1s 1.4s ease-in-out forwards;
+      transform-origin: center top;
+      transform-box: fill-box;
+    }
+    
+    .sun__lines > path {
+      transform: scaleX(0);
+      animation: scaleXIn 0.5s 2.5s ease-in-out forwards;
+      transform-origin: center center;
+      transform-box: fill-box;
+    }
+    
+    .sun__lines > path:nth-child(2) {
+      animation-delay: 2.6s;
+    }
+    
+    .sun__lines > path:nth-child(3) {
+      animation-delay: 2.7s;
+    }
+    
+    .sun__lines > path:nth-child(4) {
+      animation-delay: 2.8s;
+    }
+    
+    .sun__lines > path:nth-child(5) {
+      animation-delay: 2.9s;
+    }
+    
+    .sun__lines > path:nth-child(6) {
+      animation-delay: 3s;
+    }
+    
+    .sun__lines > path:nth-child(7) {
+      animation-delay: 3.1s;
+    }
+    
+    .sun__lines > path:nth-child(8) {
+      animation-delay: 3.2s;
+    }
+    
+    .sun__lines > path:nth-child(9) {
+      animation-delay: 3.3s;
+    }
+    
+    .sun__lines > path:nth-child(10) {
+      animation-delay: 3.4s;
+    }
+    
+    .sun__lines > path:nth-child(11) {
+      animation-delay: 3.5s;
+    }
+    
+    .sun__lines > path:nth-child(12) {
+      animation-delay: 3.6s;
+    }
+    
+    .sun__lines > path:nth-child(13) {
+      animation-delay: 3.7s;
+    }
+    
+    .sun__lines > path:nth-child(14) {
+      animation-delay: 3.8s;
+    }
+    
+    .sun__lines > path:nth-child(15) {
+      animation-delay: 3.9s;
+    }
+    
+    .sun__lines > path:nth-child(16) {
+      animation-delay: 4s;
+    }
+    
+    .sun__lines > path:nth-child(17) {
+      animation-delay: 4.1s;
+    }
+    
+    
+    @keyframes rotateIn {
+      from {
+        transform: rotateZ(180deg);
+      } to {
+        transform: rotateZ(0);
+      }
+    }
+    
+    @keyframes fromTop {
+        from {
+        transform: translateY(100%);
+      } to {
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes scaleXIn {
+      from {
+        transform: scaleX(0);
+      }
+      
+      to {
+            transform: scaleX(1);
+      }
+    }
+    @keyframes reverseRotate {
+        from {
+          transform: rotateZ(0);
+        }
+        to {
+          transform: rotateZ(180deg);
+        }
+      }
+      
+      @keyframes reverseFromTop {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(100%);
+        }
+      }
+      
+      @keyframes reverseScaleX {
+        from {
+          transform: scaleX(1);
+        }
+        to {
+          transform: scaleX(0);
+        }
+      }
+      
+      .sun__top2 {
+        animation: reverseRotate 1s 1.4s ease-in-out forwards;
+        transform-origin: center top;
+        transform-box: fill-box;
+      }
+      
+      .sun__lines > path {
+        animation: reverseScaleX 0.5s 2.5s ease-in-out forwards;
+        transform-origin: center center;
+        transform-box: fill-box;
+      }
+      
+      .sun__lines > path:nth-child(2) {
+        animation: reverseScaleX 0.5s 2.6s ease-in-out forwards;
+      }
+      
+    
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      ::before,
+      ::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+      }
+    }
+    .water{
+    width:500px;
+    height: 500px;
+    background-color: #35b3e7;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: inset 0 0 20px 0 rgba(0,0,0,.8), 0 0 20px 0 rgba(0,0,0,.3);
+    overflow: hidden;
+}
+.water:before, .water:after{
+    content:'';
+    position: absolute;
+    width:200%;
+    height: 200%;
+    top: -50%;
+    left: 50%;
+    background: #fff;
+}
+.water:before{
+    border-radius: 45%;
+    background:#fff;
+    animation:wave 5s linear infinite;
+}
+.water:after{
+    border-radius: 35%;
+    background:rgba(255,255,255,.3);
+    animation:wave 5s linear infinite;
+}
+@keyframes wave{
+    0%{
+        transform: translate(-50%, -50%) rotate(0);
+        top: -30%;
+    }
+    50%{
+    	top: -50%;
+    }
+    100%{
+        transform: translate(-50%, -50%)  rotate(360deg);
+        top: -30%;
+    }
+}
+
+
