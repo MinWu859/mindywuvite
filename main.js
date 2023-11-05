@@ -1,9 +1,7 @@
-
-const { OrbitControls } = new THREE.TextureLoader().load('three/examples/jsm/controls/OrbitControls')
-const earth = new THREE.TextureLoader().load('./images/earth.jpg')
-const sun = new THREE.TextureLoader().load('./images/sun.jfif')
-const night_sky = new THREE.TextureLoader().load('./images/night_sky.jpg')
-const textureNormal = new THREE.TextureLoader().load('./images/textureNormal.png')
+const earth = new THREE.TextureLoader().load('images/earth.jpg')
+const sun = new THREE.TextureLoader().load('images/sun.jfif')
+const night_sky = new THREE.TextureLoader().load('images/night_sky.jpg')
+const textureNormal = new THREE.TextureLoader().load('images/textureNormal.png')
 
 
 // Setup
