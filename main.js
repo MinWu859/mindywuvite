@@ -1,9 +1,10 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import earth from './images/earth.jpg';
-import sun from './images/sun.jfif';
-import night_sky from './images/night_sky.jpg';
-import textureNormal from './images/textureNormal.png';
+
+const { OrbitControls } = new THREE.TextureLoader().load('three/examples/jsm/controls/OrbitControls')
+const earth = new THREE.TextureLoader().load('./images/earth.jpg')
+const sun = new THREE.TextureLoader().load('./images/sun.jfif')
+const night_sky = new THREE.TextureLoader().load('./images/night_sky.jpg')
+const textureNormal = new THREE.TextureLoader().load('./images/textureNormal.png')
+
 
 // Setup
 const scene = new THREE.Scene();
